@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+          <link rel="stylesheet" href="assets/css/style.css" />
+     </head>
+     <body>
+          <section>
+               <h1>kalorien rechner</h1>
+               <form action="">
+                    <p>Körpergröße</p>
+                    <input type="number" name="" id="deineGroesse" />
+                    <p>Alter</p>
+                    <input type="number" name="" id="deinAlter" />
+                    <p>Gewicht</p>
+                    <input type="number" name="" id="deinGewicht" />
+                    <br />
+                    <input
+                         type="radio"
+                         id="weiblich"
+                         name="kreis"
+                         value="weiblich!"
+                         checked
+                    />
+                    <label for="mc"> Weiblich</label>
+                    <br />
+                    <input
+                         type="radio"
+                         id="maennlich"
+                         name="kreis"
+                         value="maennlich!"
+                    />
+                    <label for="mc"> Männlich</label>
+                    <p>Arbeits- und Freizeitaktivität</p>
+                    <select name="activi" id="activi">
+                         <option value="schlafen">Schlafen</option>
+                         <option value="sitzen-liegen">Sitzen/Liegen</option>
+                         <option value="bueroarbeit">Büroarbeit</option>
+                         <option value="studierende">Studierende</option>
+                         <option value="handwaerker">Handwärker</option>
+                         <option value="sportlich">sportlich</option>
+                    </select>
+                    <br />
+                    <input type="button" value="Submit" onclick="calc()" />
+               </form>
+               <div id="results">
+                    <table>
+                         <tr>
+                              <th></th>
+                              <th>kcal</th>
+                              <th>kJ</th>
+                         </tr>
+                         <tr>
+                              <td>Grundumsatz</td>
+                              <td id="grundKcal"></td>
+                              <td id="grundKj"></td>
+                         </tr>
+                         <tr>
+                              <td>Gesamtumsatz</td>
+                              <td id="gesamtKcal"></td>
+                              <td id="gesamtKj"></td>
+                         </tr>
+                    </table>
+               </div>
+          </section>
+          <script src="assets/js/main.js"></script>
+     </body>
+</html>
